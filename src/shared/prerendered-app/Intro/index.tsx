@@ -46,7 +46,7 @@ const demos = [
   {
     description: 'SVG icon',
     size: '13KB',
-    filename: 'squoosh.svg',
+    filename: 'pixcrunch.svg',
     url: logo,
     iconUrl: logoIcon,
   },
@@ -88,13 +88,13 @@ export default class Intro extends Component<Props, State> {
   private installingViaButton = false;
 
   componentDidMount() {
-    // Listen for beforeinstallprompt events, indicating Squoosh is installable.
+    // Listen for beforeinstallprompt events, indicating PixCrunch is installable.
     window.addEventListener(
       'beforeinstallprompt',
       this.onBeforeInstallPromptEvent,
     );
 
-    // Listen for the appinstalled event, indicating Squoosh has been installed.
+    // Listen for the appinstalled event, indicating PixCrunch has been installed.
     window.addEventListener('appinstalled', this.onAppInstalled);
 
     if (blobAnimImport) {
@@ -148,14 +148,6 @@ export default class Intro extends Component<Props, State> {
 
     // Save the beforeinstallprompt event so it can be called later.
     this.setState({ beforeInstallEvent: event });
-
-    // Log the event.
-    const gaEventInfo = {
-      eventCategory: 'pwa-install',
-      eventAction: 'promo-shown',
-      nonInteraction: true,
-    };
-    ga('send', 'event', gaEventInfo);
   };
 
   private onInstallClick = async (event: Event) => {
@@ -171,14 +163,6 @@ export default class Intro extends Component<Props, State> {
 
     // Wait for the user to accept or dismiss the install prompt
     const { outcome } = await beforeInstallEvent.userChoice;
-    // Send the analytics data
-    const gaEventInfo = {
-      eventCategory: 'pwa-install',
-      eventAction: 'promo-clicked',
-      eventLabel: installButtonSource,
-      eventValue: outcome === 'accepted' ? 1 : 0,
-    };
-    ga('send', 'event', gaEventInfo);
 
     // If the prompt was dismissed, we aren't going to install via the button.
     if (outcome === 'dismissed') {
@@ -192,10 +176,6 @@ export default class Intro extends Component<Props, State> {
 
     // Don't log analytics if page is not visible
     if (document.hidden) return;
-
-    // Try to get the install, if it's not set, use 'browser'
-    const source = this.installingViaButton ? installButtonSource : 'browser';
-    ga('send', 'event', 'pwa-install', 'installed', source);
 
     // Clear the install method property
     this.installingViaButton = false;
@@ -244,7 +224,7 @@ export default class Intro extends Component<Props, State> {
             <img
               class={style.logo}
               src={logoWithText}
-              alt="Squoosh"
+              alt="PixCrunch"
               width="539"
               height="162"
             />
@@ -357,7 +337,7 @@ export default class Intro extends Component<Props, State> {
                 <div class={style.infoTextWrapper}>
                   <h2 class={style.infoTitle}>Small</h2>
                   <p class={style.infoCaption}>
-                    Smaller images mean faster load times. Squoosh can reduce
+                    Smaller images mean faster load times. PixCrunch can reduce
                     file size and maintain high quality.
                   </p>
                 </div>
@@ -409,7 +389,7 @@ export default class Intro extends Component<Props, State> {
                   <h2 class={style.infoTitle}>Secure</h2>
                   <p class={style.infoCaption}>
                     Worried about privacy? Images never leave your device since
-                    Squoosh does all the work locally.
+                    PixCrunch does all the work locally.
                   </p>
                 </div>
                 <div class={style.infoImgWrapper}>
@@ -437,14 +417,8 @@ export default class Intro extends Component<Props, State> {
             <div class={style.footerPadding}>
               <footer class={style.footerItems}>
                 <a
-                  class={style.footerLink}
-                  href="https://github.com/GoogleChromeLabs/squoosh/blob/dev/README.md#privacy"
-                >
-                  Privacy
-                </a>
-                <a
                   class={style.footerLinkWithLogo}
-                  href="https://github.com/GoogleChromeLabs/squoosh"
+                  href="https://github.com/lyubomir-bozhinov/PixCrunch"
                 >
                   <img src={githubLogo} alt="" width="10" height="10" />
                   Source on Github
