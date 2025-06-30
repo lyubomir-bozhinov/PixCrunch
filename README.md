@@ -2,7 +2,7 @@
 
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-Wasm-654FF0?logo=webassembly&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-Installable-5C95E1?logo=pwa&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 [![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/lboz)
 
 **Transform your images with speed, confidence, and ultimate flexibility, on any device.**
