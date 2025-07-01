@@ -50,8 +50,10 @@ function resolveImportMetaUrlInStaticBuild(property, { moduleId }) {
   `);
 }
 
+const ASSET_BASE_PATH = process.env.ASSET_SUBPATH || '/';
+
 const dir = '.tmp/build';
-const staticPath = 'static/c/[name]-[hash][extname]';
+const staticPath = `${ASSET_BASE_PATH}static/c/[name]-[hash][extname]`;
 const jsPath = staticPath.replace('[extname]', '.js');
 
 function jsFileName(chunkInfo) {
