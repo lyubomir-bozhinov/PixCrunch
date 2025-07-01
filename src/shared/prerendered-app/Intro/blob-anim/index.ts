@@ -352,7 +352,7 @@ export function startBlobAnim(canvas: HTMLCanvasElement) {
     canvas.height = canvasBounds.height * devicePixelRatio;
     const loadImgBounds = loadImgEl.getBoundingClientRect();
     const computedStyles = getComputedStyle(canvas);
-    const blobPink = computedStyles.getPropertyValue('--blob-pink');
+    const blobBlue = computedStyles.getPropertyValue('--blob-blue');
     const loadImgCenterX =
       loadImgBounds.left - canvasBounds.left + loadImgBounds.width / 2;
     const loadImgCenterY =
@@ -374,7 +374,7 @@ export function startBlobAnim(canvas: HTMLCanvasElement) {
     ctx.globalAlpha = Number(
       computedStyles.getPropertyValue('--center-blob-opacity'),
     );
-    ctx.fillStyle = blobPink;
+    ctx.fillStyle = blobBlue;
 
     backgroundBlobs.draw(ctx);
     centralBlobs.draw(ctx, loadImgCenterX, loadImgCenterY, loadImgRadius);

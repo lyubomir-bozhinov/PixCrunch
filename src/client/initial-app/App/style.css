@@ -25,7 +25,7 @@
       bottom: 10px;
       border: 2px dashed #fff;
       background-color: rgba(0, 0, 0, 0.1);
-      border-color: var(--pink);
+      border-color: var(--blue);
       border-radius: 10px;
       opacity: 0;
       transform: scale(0.95);

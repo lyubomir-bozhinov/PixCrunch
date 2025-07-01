@@ -41,8 +41,8 @@
 }
 
 .options-1-theme {
-  --main-theme-color: var(--pink);
-  --hot-theme-color: var(--hot-pink);
+  --main-theme-color: var(--blue);
+  --hot-theme-color: var(--light-blue);
   --header-text-color: var(--white);
   --scroller-radius: var(--options-radius) var(--options-radius) 0 0;
   --rotate-copyoverbutton-angle: 90deg; /* To point down */
@@ -117,7 +117,7 @@
   }
 
   &:focus .back-blob {
-    stroke: var(--deep-blue);
+    stroke: var(--light-blue);
     stroke-width: 5px;
     animation: strokePulse 500ms ease forwards;
   }
@@ -141,7 +141,7 @@
 }
 
 .back-blob {
-  fill: var(--hot-pink);
+  fill: var(--dim-blue);
   opacity: 0.77;
 }
 

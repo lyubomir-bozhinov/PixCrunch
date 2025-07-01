@@ -17,11 +17,11 @@ import IndexPage from './pages/index';
 import * as iconLargeMaskable from 'img-url:static-build/assets/icon-large-maskable.png';
 import * as iconLarge from 'img-url:static-build/assets/icon-large.png';
 import * as screenshot1 from 'img-url:static-build/assets/screenshot1.png';
-import * as screenshot2 from 'img-url:static-build/assets/screenshot2.jpg';
-import * as screenshot3 from 'img-url:static-build/assets/screenshot3.jpg';
+import * as screenshot2 from 'img-url:static-build/assets/screenshot2.png';
+import * as screenshot3 from 'img-url:static-build/assets/screenshot3.png';
 import * as screenshot4 from 'img-url:static-build/assets/screenshot4.png';
-import * as screenshot5 from 'img-url:static-build/assets/screenshot5.jpg';
-import * as screenshot6 from 'img-url:static-build/assets/screenshot6.jpg';
+import * as screenshot5 from 'img-url:static-build/assets/screenshot5.png';
+import * as screenshot6 from 'img-url:static-build/assets/screenshot6.png';
 import dedent from 'dedent';
 import { lookup as lookupMime } from 'mime-types';
 
@@ -61,7 +61,7 @@ const toOutput: Output = {
     display: 'standalone',
     orientation: 'any',
     background_color: '#fff',
-    theme_color: '#ff3385',
+    theme_color: '#3288DD',
     icons: [
       {
         src: iconLarge.default,
@@ -76,7 +76,7 @@ const toOutput: Output = {
       },
     ],
     description:
-      'Compress and compare images with different codecs, right in your browser.',
+      'Blazing-Fast, Privacy-Focused Image Compression for Every Device',
     lang: 'en',
     categories: ['photo', 'productivity', 'utilities'],
     screenshots,
