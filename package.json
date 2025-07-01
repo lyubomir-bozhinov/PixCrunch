@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "PixCrunch",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "license": "apache-2.0",
   "scripts": {
     "build": "rollup -c && node lib/move-output.js",

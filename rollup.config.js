@@ -50,6 +50,8 @@ function resolveImportMetaUrlInStaticBuild(property, { moduleId }) {
   `);
 }
 
+const ASSET_BASE_PATH = process.env.ASSET_SUBPATH || '/';
+
 const dir = '.tmp/build';
 const staticPath = 'static/c/[name]-[hash][extname]';
 const jsPath = staticPath.replace('[extname]', '.js');
@@ -120,7 +122,7 @@ export default async function ({ watch }) {
           plugins: [
             { resolveFileUrl },
             OMT({ loader: await omtLoaderPromise }),
-            importMetaAssets(),
+            importMetaAssets({ baseUrl: ASSET_BASE_PATH }),
             serviceWorkerPlugin({
               output: 'static/serviceworker.js',
             }),
@@ -148,7 +150,12 @@ export default async function ({ watch }) {
       emitFiles({ include: '**/*', root: path.join(__dirname, 'src', 'copy') }),
       nodeExternalPlugin(),
       featurePlugin(),
-      replace({ __PRERENDER__: true, __PRODUCTION__: isProduction }),
+      replace({
+        __PRERENDER__: true,
+        __PRODUCTION__: isProduction,
+        'process.env.GH_PAGES_URL': JSON.stringify(process.env.GH_PAGES_URL),
+        'process.env.ASSET_SUBPATH': JSON.stringify(process.env.ASSET_SUBPATH),
+      }),
       initialCssPlugin(),
       runScript(dir + '/static-build/index.js'),
     ],
