@@ -62,7 +62,6 @@ export function escapeStyleScriptContent(str: string): string {
  */
 export const siteOrigin = (() => {
   if (process.env.DEV_PORT) return `http://localhost:${process.env.DEV_PORT}`;
-  if (process.env.GH_PAGES_URL) return process.env.GH_PAGES_URL;
   // https://docs.netlify.com/configure-builds/environment-variables/#build-metadata
   if (process.env.CONTEXT === 'production') return 'https://pixcrunch.com';
   if (process.env.DEPLOY_PRIME_URL) return process.env.DEPLOY_PRIME_URL;
