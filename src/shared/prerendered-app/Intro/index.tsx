@@ -4,6 +4,7 @@ import { linkRef } from 'shared/prerendered-app/util';
 import '../../custom-els/loading-spinner';
 import logo from 'url:./imgs/logo.png';
 import githubLogo from 'url:./imgs/github-logo.svg';
+import bmcLogo from 'url:./imgs/buy-me-a-coffee-logo.svg';
 import largePhoto from 'url:./imgs/demos/demo-large-photo.jpg';
 import artwork from 'url:./imgs/demos/demo-artwork.jpg';
 import deviceScreen from 'url:./imgs/demos/demo-device-screen.png';
@@ -422,6 +423,13 @@ export default class Intro extends Component<Props, State> {
                 >
                   <img src={githubLogo} alt="" width="10" height="10" />
                   Source on Github
+                </a>
+                <a
+                  class={style.footerLinkWithLogo}
+                  href="https://buymeacoffee.com/lboz"
+                >
+                  <img src={bmcLogo} alt="" width="10" height="10" />
+                  Buy Me a Coffee
                 </a>
               </footer>
             </div>

@@ -9,7 +9,7 @@
 
 PixCrunch is a Progressive Web App (PWA) designed from the ground up to give you powerful image compression tools directly in your browser, with an absolute commitment to your privacy. Say goodbye to slow uploads, compromised data, and intrusive analytics. Install it once, use it everywhere, and enjoy a seamless experience tailored to your device, whether it's a smartphone, tablet, or desktop.
 
-> **Acknowledgment:** PixCrunch is a fork of [Squoosh](https://squoosh.app), enhanced with additional features and optimizations focused on privacy, performance, and user experience.
+> **Acknowledgment:** PixCrunch is a fork and rebrand of [Squoosh](https://squoosh.app), enhanced with additional features and optimizations focused on privacy, performance, and user experience.
 
 ---
 
@@ -17,13 +17,12 @@ PixCrunch is a Progressive Web App (PWA) designed from the ground up to give you
 
 - **Blazing-Fast On-Device Compression:** Powered by **Rust** compiled to **WebAssembly (Wasm)** with multi-threading via Web Workers, delivering near-native performance directly in your browser.
 - **Uncompromising Privacy:** All image processing happens locally on your device. No uploads, no telemetry, no third-party servers.
-- **Universal Installability (PWA):** Install PixCrunch on any device—mobile, tablet, or desktop—and use it like a native app, offline and anytime.
-- **Intuitive & Responsive UI:** Built with **React** and **Tailwind CSS**, offering a smooth, touch-friendly interface that adapts to any screen size.
+- **Universal Installability (PWA):** Install PixCrunch on any device — mobile, tablet, or desktop — and use it like a native app, offline and anytime.
+- **Intuitive & Responsive UI:** Built with the idea of offering a smooth, touch-friendly interface that adapts to any screen size.
 - **Broad Format Support:** Compress and convert images in AVIF, JPEG XL, HEIC, TIFF, JPEG, PNG, and WebP formats.
-- **Advanced Compression Controls:** Customize output with features like custom JPEG quantization tables and per-channel compression settings for PNG/WebP.
+- **Advanced Compression Controls:** Customize output with features like per-channel compression settings for PNG/WebP.
 - **Offline Functionality:** Works completely without an internet connection after the initial install.
 - **Drag & Drop Support:** Easily add single images, multiple files, or entire folders (Chromium-based browsers) via drag-and-drop.
-- **Batch & Folder Processing:** Efficiently compress large sets of images or whole folders locally.
 - **Dynamic Preview Modes:** Compare original and compressed images with split-screen, side-by-side, and zoom functionalities.
 - **Open-Source & Transparent:** Fully open-source codebase enabling audits, reproducible builds, and trust.
 
@@ -34,7 +33,7 @@ PixCrunch is a Progressive Web App (PWA) designed from the ground up to give you
 ## 🚀 Live Demo
 
 Experience PixCrunch directly in your browser:
-**[Try PixCrunch Live!](https://lyubomir-bozhinov.github.io/pixcrunch)**
+**[Try PixCrunch Live!](https://pixcrunch.com/)**
 
 Open the link in any modern browser (Chrome, Edge, Firefox, Safari) and start compressing your images instantly.
 
@@ -45,14 +44,14 @@ PixCrunch is a Progressive Web App, meaning you can use it directly in your brow
 ### Using the Web Application
 
 1. Open your preferred modern web browser (Chrome, Edge, Firefox, Safari).
-2. Navigate to the live demo URL: **[https://lyubomir-bozhinov.github.io/pixcrunch](https://lyubomir-bozhinov.github.io/pixcrunch)**
+2. Navigate to the live website URL: **[https://pixcrunch.com/](https://pixcrunch.com/)**
 3. Start dragging images onto the page or use the file selection button!
 
 ### Installing PixCrunch as an App (Recommended)
 
 For a truly native-like experience, you can install PixCrunch directly to your device:
 
-- **On Desktop (Chrome/Edge):** Look for the "Install App" icon (often a small computer with an arrow) in your browser's address bar. Click it and follow the prompts.
+- **On Desktop (Chrome/Edge):** Look for the "Install" button. Click it and follow the prompts.
 - **On Android:** Open the app in Chrome, tap the menu (⁝) icon, and select "Add to Home Screen" or "Install app."
 - **On iOS (Safari):** Open the app in Safari, tap the Share button (↑), and select "Add to Home Screen."
 
@@ -92,7 +91,7 @@ Want to contribute or run PixCrunch locally? Here's how to get started!
 
 - **"App not installing" / PWA issues:** Ensure your browser supports PWA installation and check the browser's developer tools (Application -> Manifest/Service Workers) for any errors.
 - **Images not compressing / Errors:** Check the browser's developer console (F12) for JavaScript or WebAssembly errors.
-- **Folder drag & drop not working:** This feature relies on the File System Access API, currently best supported in Chromium-based browsers (Chrome, Edge). Ensure you are using an up-to-date version of one of these browsers.
+- **Drag & drop not working:** This feature relies on the File System Access API, currently best supported in Chromium-based browsers (e.g, Chrome, Edge). Ensure you are using an up-to-date version of one of such a browser.
 - **Slow performance for very large images:** While optimized, extremely high-resolution images might still take time. Ensure you have sufficient RAM and a modern CPU.
 
 ---
@@ -105,7 +104,6 @@ Want to contribute or run PixCrunch locally? Here's how to get started!
 - **Custom Presets:** Allow users to save and load their favorite compression settings.
 - **Undo/Redo History:** Implement a history of operations for easy reverts.
 - **Direct Camera Capture:** Integrate with the `getUserMedia` API to compress photos directly from a device's camera.
-- **Export as ZIP:** Option to download a batch of compressed images as a single ZIP archive.
 
 ---
 
@@ -117,7 +115,7 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the original repo's Apache License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
