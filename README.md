@@ -72,18 +72,18 @@ Want to contribute or run PixCrunch locally? Here's how to get started!
     git clone [https://github.com/your-username/pixcrunch.git](https://github.com/your-username/pixcrunch.git)
     cd pixcrunch
     ```
-2. To install node packages, run:
-   ```sh
-   npm install
-   ```
-3. Then build the app by running:
-   ```sh
-   npm run build
-   ```
-4. After building, start the development server by running:
-   ```sh
-   npm run dev
-   ```
+2.  To install node packages, run:
+    ```sh
+    npm install
+    ```
+3.  Then build the app by running:
+    ```sh
+    npm run build
+    ```
+4.  After building, start the development server by running:
+    ```sh
+    npm run dev
+    ```
 
 ---
 
@@ -130,4 +130,3 @@ I’m into mentoring, scaling systems, and solving problems that make people say
 Thanks for stopping by!
 
 **Happy Crunching!** 🏞️➡️✨
-

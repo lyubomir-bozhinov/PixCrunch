@@ -217,4 +217,3 @@ async function init(input, maybe_memory) {
 }
 
 export default init;
-

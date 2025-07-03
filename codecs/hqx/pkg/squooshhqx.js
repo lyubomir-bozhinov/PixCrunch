@@ -1,4 +1,3 @@
-
 let wasm;
 
 let cachegetUint32Memory0 = null;
@@ -105,4 +104,3 @@ async function init(input) {
 }
 
 export default init;
-

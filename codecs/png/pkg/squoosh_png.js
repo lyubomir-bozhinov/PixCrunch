@@ -1,4 +1,3 @@
-
 let wasm;
 
 let cachedTextDecoder = new TextDecoder('utf-8', { ignoreBOM: true, fatal: true });
@@ -172,4 +171,3 @@ async function init(input) {
 }
 
 export default init;
-

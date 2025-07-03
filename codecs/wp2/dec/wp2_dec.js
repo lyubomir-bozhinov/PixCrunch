@@ -1,4 +1,3 @@
-
 var Module = (function() {
   var _scriptDir = import.meta.url;
   

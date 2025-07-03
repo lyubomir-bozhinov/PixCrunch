@@ -1,4 +1,3 @@
-
 libimagequant is derived from code by Jef Poskanzer and Greg Roelofs
 licensed under pngquant's original license (at the end of this file),
 and contains extensive changes and additions by Kornel Lesiński
