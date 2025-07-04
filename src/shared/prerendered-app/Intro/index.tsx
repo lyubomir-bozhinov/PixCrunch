@@ -2,7 +2,8 @@ import { h, Component } from 'preact';
 
 import { linkRef } from 'shared/prerendered-app/util';
 import '../../custom-els/loading-spinner';
-import logo from 'url:./imgs/logo.png';
+import logoWebp from 'url:./imgs/logo.webp';
+import logoPng from 'url:./imgs/logo.png';
 import githubLogo from 'url:./imgs/github-logo.svg';
 import bmcLogo from 'url:./imgs/buy-me-a-coffee-logo.svg';
 import largePhoto from 'url:./imgs/demos/demo-large-photo.jpg';
@@ -167,7 +168,10 @@ export default class Intro extends Component<Props, State> {
         <section class={style.hero}>
           <div class={style.heroContent}>
             <div class={style.logoContainer}>
-              <img class={style.logo} src={logo} alt="PixCrunch" />
+              <picture>
+                <source srcset={logoWebp} type="image/webp" />
+                <img class={style.logo} src={logoPng} alt="PixCrunch" />
+              </picture>
             </div>
             <h1 class={style.headline}>
               Blazing-Fast, Privacy-Focused Image Compression for Every Device
