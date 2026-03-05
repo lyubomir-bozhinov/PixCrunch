@@ -5,7 +5,7 @@ import '../../custom-els/loading-spinner';
 import logoWebp from 'url:./imgs/logo.webp';
 import logoPng from 'url:./imgs/logo.png';
 import githubLogo from 'url:./imgs/github-logo.svg';
-import bmcLogo from 'url:./imgs/buy-me-a-coffee-logo.svg';
+
 import largePhoto from 'url:./imgs/demos/demo-large-photo.jpg';
 import artwork from 'url:./imgs/demos/demo-artwork.jpg';
 import deviceScreen from 'url:./imgs/demos/demo-device-screen.png';
@@ -268,20 +268,6 @@ export default class Intro extends Component<Props, State> {
             >
               <img src={githubLogo} alt="GitHub Logo" width="20" height="20" />
               Source on Github
-            </a>
-            <a
-              class={style.footerLinkWithLogo}
-              href="https://buymeacoffee.com/lboz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={bmcLogo}
-                alt="Buy Me a Coffee Logo"
-                width="20"
-                height="20"
-              />
-              Buy Me a Coffee
             </a>
           </div>
         </footer>

@@ -3,7 +3,6 @@
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-Wasm-654FF0?logo=webassembly&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-Installable-5C95E1?logo=pwa&logoColor=white)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
-[![Buy Me a Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/lboz)
 
 **Transform your images with speed, confidence, and ultimate flexibility, on any device.**
 
@@ -123,9 +122,7 @@ This project is licensed under the original repo's Apache License - see the [LIC
 
 I build things — products, teams, systems… occasionally IKEA furniture (with mixed results). I’ve led engineering in everything from scrappy startups to big enterprises, but what I really love is turning ideas into real, useful tech.
 
-I’m into mentoring, scaling systems, and solving problems that make people say “well, that’s impossible.” If you like what I’m building here, you can fuel my caffeine-powered code sessions:
-
-☕ [Buy Me a Coffee](https://www.buymeacoffee.com/lboz)
+I’m into mentoring, scaling systems, and solving problems that make people say “well, that’s impossible.”
 
 Thanks for stopping by!
 
