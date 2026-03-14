@@ -120,4 +120,4 @@ This project is licensed under the original repo's Apache License - see the [LIC
 
 ## About
 
-Built and maintained by [Barnett Studios](https://barnett-studios.com) — a technology consultancy specialising in fractional technical leadership for startups and scale-ups.
+Built and maintained by [Barnett Studios](https://barnett-studios.com) — building products, teams, and systems that last. Part-time technical leadership for startups and scale-ups.
