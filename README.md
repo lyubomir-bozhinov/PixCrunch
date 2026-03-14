@@ -68,7 +68,7 @@ Want to contribute or run PixCrunch locally? Here's how to get started!
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/pixcrunch.git](https://github.com/your-username/pixcrunch.git)
+    git clone [https://github.com/Barnett-Studios/PixCrunch.git](https://github.com/Barnett-Studios/PixCrunch.git)
     cd pixcrunch
     ```
 2.  To install node packages, run:
@@ -118,12 +118,6 @@ This project is licensed under the original repo's Apache License - see the [LIC
 
 ---
 
-## About Me
+## About
 
-I build things — products, teams, systems… occasionally IKEA furniture (with mixed results). I’ve led engineering in everything from scrappy startups to big enterprises, but what I really love is turning ideas into real, useful tech.
-
-I’m into mentoring, scaling systems, and solving problems that make people say “well, that’s impossible.”
-
-Thanks for stopping by!
-
-**Happy Crunching!** 🏞️➡️✨
+Built and maintained by [Barnett Studios](https://barnett-studios.com) — a technology consultancy specialising in fractional technical leadership for startups and scale-ups.
